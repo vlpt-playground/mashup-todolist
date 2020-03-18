@@ -110,11 +110,12 @@ function TodoCreate() {
               placeholder="할 일을 입력 후, Enter 를 누르세요"
               onChange={onChange}
               value={value}
+              data-cy="todo-input"
             />
           </InsertForm>
         </InsertFormPositioner>
       )}
-      <CircleButton onClick={onToggle} open={open}>
+      <CircleButton onClick={onToggle} open={open} data-cy="create">
         <MdAdd />
       </CircleButton>
     </>

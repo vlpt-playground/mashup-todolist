@@ -14,7 +14,7 @@ function TodoList() {
   const todos = useTodoState();
 
   return (
-    <TodoListBlock>
+    <TodoListBlock data-cy="list">
       {todos.map(todo => (
         <TodoItem
           key={todo.id}
